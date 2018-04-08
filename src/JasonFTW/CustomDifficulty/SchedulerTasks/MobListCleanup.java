@@ -1,23 +1,12 @@
-/*
- * Decompiled with CFR 0_110.
- * 
- * Could not load the following classes:
- *  org.bukkit.Bukkit
- *  org.bukkit.World
- *  org.bukkit.plugin.Plugin
- *  org.bukkit.scheduler.BukkitScheduler
- */
-package JasonFTW.CustomDifficulty.SchedulerTasks;
+package jasonftw.CustomDifficulty.SchedulerTasks;
 
-import JasonFTW.CustomDifficulty.CustomDifficulty;
-import JasonFTW.CustomDifficulty.commands.Performance;
-import JasonFTW.CustomDifficulty.util.Manager;
-import java.io.PrintStream;
-import java.util.List;
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.plugin.Plugin;
-import org.bukkit.scheduler.BukkitScheduler;
+
+import jasonftw.CustomDifficulty.CustomDifficulty;
+import jasonftw.CustomDifficulty.commands.Performance;
+import jasonftw.CustomDifficulty.util.Manager;
 
 public class MobListCleanup
 implements Runnable {

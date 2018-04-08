@@ -9,17 +9,17 @@
  *  org.bukkit.command.CommandSender
  *  org.bukkit.entity.Player
  */
-package JasonFTW.CustomDifficulty.commands;
+package jasonftw.CustomDifficulty.commands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.World;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import JasonFTW.CustomDifficulty.CustomDifficulty;
-import JasonFTW.CustomDifficulty.hooks.Permissions;
-import JasonFTW.CustomDifficulty.util.Difficulty;
-import JasonFTW.CustomDifficulty.util.Manager;
+import jasonftw.CustomDifficulty.CustomDifficulty;
+import jasonftw.CustomDifficulty.hooks.Permissions;
+import jasonftw.CustomDifficulty.util.Difficulty;
+import jasonftw.CustomDifficulty.util.Manager;
 
 public class Check {
     private static CustomDifficulty plugin;

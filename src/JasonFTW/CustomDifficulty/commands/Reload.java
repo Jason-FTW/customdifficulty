@@ -1,18 +1,11 @@
-/*
- * Decompiled with CFR 0_110.
- * 
- * Could not load the following classes:
- *  org.bukkit.ChatColor
- *  org.bukkit.command.CommandSender
- *  org.bukkit.entity.Player
- */
-package JasonFTW.CustomDifficulty.commands;
+package jasonftw.CustomDifficulty.commands;
 
-import JasonFTW.CustomDifficulty.hooks.Permissions;
-import JasonFTW.CustomDifficulty.util.Manager;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+
+import jasonftw.CustomDifficulty.hooks.Permissions;
+import jasonftw.CustomDifficulty.util.Manager;
 
 public abstract class Reload {
     public static void onCommand(CommandSender commandSender, String[] args) {

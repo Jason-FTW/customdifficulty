@@ -1,27 +1,11 @@
-/*
- * Decompiled with CFR 0_110.
- * 
- * Could not load the following classes:
- *  org.bukkit.ChatColor
- *  org.bukkit.command.Command
- *  org.bukkit.command.CommandExecutor
- *  org.bukkit.command.CommandSender
- */
-package JasonFTW.CustomDifficulty.commands;
+package jasonftw.CustomDifficulty.commands;
 
-import JasonFTW.CustomDifficulty.commands.Check;
-import JasonFTW.CustomDifficulty.commands.Help;
-import JasonFTW.CustomDifficulty.commands.Performance;
-import JasonFTW.CustomDifficulty.commands.RegionHelp;
-import JasonFTW.CustomDifficulty.commands.RegionInfo;
-import JasonFTW.CustomDifficulty.commands.RegionSet;
-import JasonFTW.CustomDifficulty.commands.Reload;
-import JasonFTW.CustomDifficulty.commands.Set;
-import JasonFTW.CustomDifficulty.util.Manager;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
+
+import jasonftw.CustomDifficulty.util.Manager;
 
 public class DifficultyCommands
 implements CommandExecutor {

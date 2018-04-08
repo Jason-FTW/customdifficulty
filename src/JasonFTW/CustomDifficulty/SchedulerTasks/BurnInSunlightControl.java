@@ -1,42 +1,13 @@
-/*
- * Decompiled with CFR 0_110.
- * 
- * Could not load the following classes:
- *  org.bukkit.Bukkit
- *  org.bukkit.Location
- *  org.bukkit.Material
- *  org.bukkit.World
- *  org.bukkit.block.Biome
- *  org.bukkit.block.Block
- *  org.bukkit.entity.Entity
- *  org.bukkit.entity.Ghast
- *  org.bukkit.entity.LivingEntity
- *  org.bukkit.entity.PigZombie
- *  org.bukkit.entity.Player
- *  org.bukkit.entity.Skeleton
- *  org.bukkit.entity.Zombie
- *  org.bukkit.plugin.Plugin
- *  org.bukkit.scheduler.BukkitScheduler
- *  org.bukkit.util.config.Configuration
- */
-package JasonFTW.CustomDifficulty.SchedulerTasks;
+package jasonftw.CustomDifficulty.SchedulerTasks;
 
-import JasonFTW.CustomDifficulty.CustomDifficulty;
-import JasonFTW.CustomDifficulty.commands.Performance;
-import JasonFTW.CustomDifficulty.util.CdCreatureType;
-import JasonFTW.CustomDifficulty.util.Config;
-import JasonFTW.CustomDifficulty.util.CreatureInfo;
-import JasonFTW.CustomDifficulty.util.Difficulty;
-import JasonFTW.CustomDifficulty.util.Manager;
 import java.util.HashMap;
 import java.util.List;
 import java.util.logging.Level;
+
 import org.bukkit.Bukkit;
-import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.block.Biome;
-import org.bukkit.block.Block;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Ghast;
 import org.bukkit.entity.LivingEntity;
@@ -45,14 +16,20 @@ import org.bukkit.entity.Player;
 import org.bukkit.entity.Skeleton;
 import org.bukkit.entity.Zombie;
 import org.bukkit.plugin.Plugin;
-import org.bukkit.scheduler.BukkitScheduler;
-import org.bukkit.util.config.Configuration;
+
+import jasonftw.CustomDifficulty.CustomDifficulty;
+import jasonftw.CustomDifficulty.commands.Performance;
+import jasonftw.CustomDifficulty.util.CdCreatureType;
+import jasonftw.CustomDifficulty.util.Config;
+import jasonftw.CustomDifficulty.util.CreatureInfo;
+import jasonftw.CustomDifficulty.util.Difficulty;
+import jasonftw.CustomDifficulty.util.Manager;
 
 public class BurnInSunlightControl
 implements Runnable {
     private int id;
     private World world;
-    private static final HashMap<World, BurnInSunlightControl> tasks = new HashMap();
+    private static final HashMap<World, BurnInSunlightControl> tasks = new HashMap<World, BurnInSunlightControl>();
 
     public BurnInSunlightControl(CustomDifficulty plugin, World world) {
         if (!tasks.containsKey((Object)world) && world != null) {
@@ -75,7 +52,7 @@ implements Runnable {
         }
         BurnInSunlightControl task = tasks.get((Object)world);
         if (task == null || task.id == -1) {
-            new JasonFTW.CustomDifficulty.SchedulerTasks.BurnInSunlightControl(plugin, world);
+            new jasonftw.CustomDifficulty.SchedulerTasks.BurnInSunlightControl(plugin, world);
         }
     }
 
@@ -112,7 +89,7 @@ implements Runnable {
     @Override
     public void run() {
         long time = System.nanoTime();
-        List entities = this.world.getLivingEntities();
+        List<LivingEntity> entities = this.world.getLivingEntities();
         Difficulty difficulty = Manager.getDifficulty(this.world);
         if (difficulty == null) {
             if (Performance.isRunning()) {

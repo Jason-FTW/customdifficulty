@@ -1,28 +1,17 @@
-/*
- * Decompiled with CFR 0_110.
- * 
- * Could not load the following classes:
- *  org.bukkit.Bukkit
- *  org.bukkit.World
- *  org.bukkit.entity.LivingEntity
- *  org.bukkit.entity.Player
- *  org.bukkit.plugin.Plugin
- *  org.bukkit.scheduler.BukkitScheduler
- */
-package JasonFTW.CustomDifficulty.SchedulerTasks;
+package jasonftw.CustomDifficulty.SchedulerTasks;
 
-import JasonFTW.CustomDifficulty.CustomDifficulty;
-import JasonFTW.CustomDifficulty.util.Aggressiveness;
-import JasonFTW.CustomDifficulty.util.CreatureInfo;
 import java.util.HashMap;
-import java.util.List;
 import java.util.logging.Level;
+
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
-import org.bukkit.scheduler.BukkitScheduler;
+
+import jasonftw.CustomDifficulty.CustomDifficulty;
+import jasonftw.CustomDifficulty.util.Aggressiveness;
+import jasonftw.CustomDifficulty.util.CreatureInfo;
 
 public class MobCounter
 implements Runnable {

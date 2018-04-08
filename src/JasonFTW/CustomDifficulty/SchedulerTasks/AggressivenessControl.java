@@ -1,51 +1,13 @@
-/*
- * Decompiled with CFR 0_110.
- * 
- * Could not load the following classes:
- *  org.bukkit.Bukkit
- *  org.bukkit.Location
- *  org.bukkit.Material
- *  org.bukkit.World
- *  org.bukkit.block.Block
- *  org.bukkit.entity.Chicken
- *  org.bukkit.entity.Cow
- *  org.bukkit.entity.Creature
- *  org.bukkit.entity.Entity
- *  org.bukkit.entity.Giant
- *  org.bukkit.entity.LivingEntity
- *  org.bukkit.entity.Pig
- *  org.bukkit.entity.PigZombie
- *  org.bukkit.entity.Player
- *  org.bukkit.entity.Sheep
- *  org.bukkit.entity.Squid
- *  org.bukkit.event.Event
- *  org.bukkit.event.entity.EntityDamageByEntityEvent
- *  org.bukkit.event.entity.EntityDamageEvent
- *  org.bukkit.event.entity.EntityDamageEvent$DamageCause
- *  org.bukkit.plugin.Plugin
- *  org.bukkit.plugin.PluginManager
- *  org.bukkit.scheduler.BukkitScheduler
- *  org.bukkit.util.Vector
- *  org.bukkit.util.config.Configuration
- */
-package JasonFTW.CustomDifficulty.SchedulerTasks;
+package jasonftw.CustomDifficulty.SchedulerTasks;
 
-import JasonFTW.CustomDifficulty.CustomDifficulty;
-import JasonFTW.CustomDifficulty.commands.Performance;
-import JasonFTW.CustomDifficulty.util.Aggressiveness;
-import JasonFTW.CustomDifficulty.util.CdCreatureType;
-import JasonFTW.CustomDifficulty.util.Config;
-import JasonFTW.CustomDifficulty.util.CreatureInfo;
-import JasonFTW.CustomDifficulty.util.Difficulty;
-import JasonFTW.CustomDifficulty.util.Manager;
 import java.util.HashMap;
 import java.util.List;
 import java.util.logging.Level;
+
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
-import org.bukkit.block.Block;
 import org.bukkit.entity.Chicken;
 import org.bukkit.entity.Cow;
 import org.bukkit.entity.Creature;
@@ -61,14 +23,19 @@ import org.bukkit.event.Event;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.event.entity.EntityDamageEvent;
 import org.bukkit.plugin.Plugin;
-import org.bukkit.plugin.PluginManager;
-import org.bukkit.scheduler.BukkitScheduler;
 import org.bukkit.util.Vector;
-import org.bukkit.util.config.Configuration;
 
-public class AggressivenessControl
-implements Runnable {
-    private static final HashMap<World, AggressivenessControl> tasks = new HashMap();
+import jasonftw.CustomDifficulty.CustomDifficulty;
+import jasonftw.CustomDifficulty.commands.Performance;
+import jasonftw.CustomDifficulty.util.Aggressiveness;
+import jasonftw.CustomDifficulty.util.CdCreatureType;
+import jasonftw.CustomDifficulty.util.Config;
+import jasonftw.CustomDifficulty.util.CreatureInfo;
+import jasonftw.CustomDifficulty.util.Difficulty;
+import jasonftw.CustomDifficulty.util.Manager;
+
+public class AggressivenessControl implements Runnable {
+    private static final HashMap<World, AggressivenessControl> tasks = new HashMap<World, AggressivenessControl>();
     private final int id;
     private final World world;
 
@@ -92,7 +59,7 @@ implements Runnable {
         }
         AggressivenessControl task = tasks.get((Object)world);
         if (task == null || task.id == -1) {
-            new JasonFTW.CustomDifficulty.SchedulerTasks.AggressivenessControl(plugin, world);
+            new jasonftw.CustomDifficulty.SchedulerTasks.AggressivenessControl(plugin, world);
         }
     }
 
@@ -129,10 +96,10 @@ implements Runnable {
     public void run() {
         long time = System.nanoTime();
         for (Player player : this.world.getPlayers()) {
-            List ents = player.getNearbyEntities(17.0, 8.0, 17.0);
+            List<Entity> ents = player.getNearbyEntities(17.0, 8.0, 17.0);
             for (Entity e : ents) {
                 double dz;
-                int damage;
+                double damage;
                 Difficulty difficulty;
                 Location pLoc;
                 if (!(e instanceof Creature) || !(e instanceof LivingEntity)) continue;

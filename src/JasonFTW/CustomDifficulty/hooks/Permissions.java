@@ -1,17 +1,4 @@
-/*
- * Decompiled with CFR 0_110.
- * 
- * Could not load the following classes:
- *  org.bukkit.ChatColor
- *  org.bukkit.Server
- *  org.bukkit.command.CommandSender
- *  org.bukkit.entity.Player
- *  org.bukkit.plugin.Plugin
- *  org.bukkit.plugin.PluginDescriptionFile
- *  org.bukkit.plugin.PluginManager
- *  org.bukkit.plugin.java.JavaPlugin
- */
-package JasonFTW.CustomDifficulty.hooks;
+package jasonftw.CustomDifficulty.hooks;
 
 import java.lang.reflect.Method;
 import java.util.logging.Level;
@@ -22,7 +9,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import JasonFTW.CustomDifficulty.CustomDifficulty;
+import jasonftw.CustomDifficulty.CustomDifficulty;
 
 public abstract class Permissions {
     private static Method has = null;
@@ -102,4 +89,3 @@ public abstract class Permissions {
         }
     }
 }
-

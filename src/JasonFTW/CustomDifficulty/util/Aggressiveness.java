@@ -1,17 +1,14 @@
-/*
- * Decompiled with CFR 0_110.
- */
-package JasonFTW.CustomDifficulty.util;
+package jasonftw.CustomDifficulty.util;
 
 public enum Aggressiveness {
     AGGRESSIVE,
     FRIENDLY,
     NULL,
     PASSIVE;
+	
+	private Aggressiveness() {}
     
-
-    private Aggressiveness(String string2, int n2) {
-    }
+    private Aggressiveness(String string2, int n2) {}
 
     public static Aggressiveness valueOfString(String string) {
         if (string == null) {

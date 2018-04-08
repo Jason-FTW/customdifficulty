@@ -1,15 +1,4 @@
-/*
- * Decompiled with CFR 0_110.
- * 
- * Could not load the following classes:
- *  org.bukkit.Bukkit
- *  org.bukkit.ChatColor
- *  org.bukkit.Server
- *  org.bukkit.World
- *  org.bukkit.command.CommandSender
- *  org.bukkit.entity.Player
- */
-package JasonFTW.CustomDifficulty.commands;
+package jasonftw.CustomDifficulty.commands;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -17,12 +6,12 @@ import org.bukkit.World;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import JasonFTW.CustomDifficulty.SchedulerTasks.AggressivenessControl;
-import JasonFTW.CustomDifficulty.SchedulerTasks.BurnInSunlightControl;
-import JasonFTW.CustomDifficulty.SchedulerTasks.MobCounter;
-import JasonFTW.CustomDifficulty.SchedulerTasks.SpawnControl;
-import JasonFTW.CustomDifficulty.hooks.Permissions;
-import JasonFTW.CustomDifficulty.util.Manager;
+import jasonftw.CustomDifficulty.SchedulerTasks.AggressivenessControl;
+import jasonftw.CustomDifficulty.SchedulerTasks.BurnInSunlightControl;
+import jasonftw.CustomDifficulty.SchedulerTasks.MobCounter;
+import jasonftw.CustomDifficulty.SchedulerTasks.SpawnControl;
+import jasonftw.CustomDifficulty.hooks.Permissions;
+import jasonftw.CustomDifficulty.util.Manager;
 
 public abstract class Performance {
     private static volatile boolean run = false;

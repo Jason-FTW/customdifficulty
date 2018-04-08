@@ -1,19 +1,11 @@
-/*
- * Decompiled with CFR 0_110.
- * 
- * Could not load the following classes:
- *  org.bukkit.ChatColor
- *  org.bukkit.command.CommandSender
- *  org.bukkit.plugin.PluginDescriptionFile
- */
-package JasonFTW.CustomDifficulty.commands;
+package jasonftw.CustomDifficulty.commands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 
-import JasonFTW.CustomDifficulty.CustomDifficulty;
-import JasonFTW.CustomDifficulty.hooks.Permissions;
-import JasonFTW.CustomDifficulty.util.Manager;
+import jasonftw.CustomDifficulty.CustomDifficulty;
+import jasonftw.CustomDifficulty.hooks.Permissions;
+import jasonftw.CustomDifficulty.util.Manager;
 
 public abstract class Help {
     private static CustomDifficulty plugin;

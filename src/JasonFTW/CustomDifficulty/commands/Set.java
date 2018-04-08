@@ -1,17 +1,4 @@
-/*
- * Decompiled with CFR 0_110.
- * 
- * Could not load the following classes:
- *  org.bukkit.Bukkit
- *  org.bukkit.ChatColor
- *  org.bukkit.Server
- *  org.bukkit.World
- *  org.bukkit.command.CommandSender
- *  org.bukkit.entity.Player
- *  org.bukkit.plugin.Plugin
- *  org.bukkit.plugin.PluginManager
- */
-package JasonFTW.CustomDifficulty.commands;
+package jasonftw.CustomDifficulty.commands;
 
 import java.io.File;
 
@@ -21,9 +8,9 @@ import org.bukkit.World;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import JasonFTW.CustomDifficulty.hooks.Permissions;
-import JasonFTW.CustomDifficulty.util.Difficulty;
-import JasonFTW.CustomDifficulty.util.Manager;
+import jasonftw.CustomDifficulty.hooks.Permissions;
+import jasonftw.CustomDifficulty.util.Difficulty;
+import jasonftw.CustomDifficulty.util.Manager;
 
 public abstract class Set {
     private static String worldNotFound = (Object)ChatColor.RED + "World " + (Object)ChatColor.AQUA + "%%% " + (Object)ChatColor.RED + "not found!";

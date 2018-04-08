@@ -1,31 +1,13 @@
-/*
- * Decompiled with CFR 0_110.
- * 
- * Could not load the following classes:
- *  com.nijikokun.register.payment.Method
- *  com.nijikokun.register.payment.Method$MethodAccount
- *  com.nijikokun.register.payment.Methods
- *  org.bukkit.Bukkit
- *  org.bukkit.Server
- *  org.bukkit.entity.Player
- *  org.bukkit.plugin.Plugin
- *  org.bukkit.plugin.PluginDescriptionFile
- *  org.bukkit.plugin.PluginManager
- *  org.bukkit.plugin.java.JavaPlugin
- */
-package JasonFTW.CustomDifficulty.hooks;
+package jasonftw.CustomDifficulty.hooks;
 
-import JasonFTW.CustomDifficulty.CustomDifficulty;
-import com.nijikokun.register.payment.Method;
-import com.nijikokun.register.payment.Methods;
 import java.util.logging.Level;
+
 import org.bukkit.Bukkit;
-import org.bukkit.Server;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
-import org.bukkit.plugin.PluginDescriptionFile;
-import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import jasonftw.CustomDifficulty.CustomDifficulty;
 
 public abstract class Register {
     private static Plugin register = null;

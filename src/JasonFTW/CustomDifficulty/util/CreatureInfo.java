@@ -1,41 +1,14 @@
-/*
- * Decompiled with CFR 0_110.
- * 
- * Could not load the following classes:
- *  org.bukkit.Location
- *  org.bukkit.Material
- *  org.bukkit.World
- *  org.bukkit.World$Environment
- *  org.bukkit.block.Block
- *  org.bukkit.entity.CreatureType
- *  org.bukkit.entity.Creeper
- *  org.bukkit.entity.Entity
- *  org.bukkit.entity.LivingEntity
- *  org.bukkit.entity.Wolf
- *  org.bukkit.event.entity.EntityDamageByEntityEvent
- */
-package JasonFTW.CustomDifficulty.util;
+package jasonftw.CustomDifficulty.util;
 
-import JasonFTW.CustomDifficulty.util.Aggressiveness;
-import JasonFTW.CustomDifficulty.util.CdCreatureType;
-import JasonFTW.CustomDifficulty.util.Difficulty;
-import JasonFTW.CustomDifficulty.util.Manager;
-
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
-import org.bukkit.block.Block;
-import org.bukkit.entity.CreatureType;
 import org.bukkit.entity.Creeper;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Wolf;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
-import org.bukkit.entity.Monster;
-import org.bukkit.entity.Animals;
-
 
 public abstract class CreatureInfo {
     public static Aggressiveness getAggressiveness(LivingEntity e) {
@@ -50,7 +23,6 @@ public abstract class CreatureInfo {
         return difficulty.getAggressivenessNight(CdCreatureType.valueOf((Entity)e));
     }
 
-    @SuppressWarnings("deprecation")
 	public static EntityType getCreatureTypeFromName(String name) {
         name = name.replace(" ", "");
         if ((name = name.replace("_", "")).equalsIgnoreCase("cavespider")) {
