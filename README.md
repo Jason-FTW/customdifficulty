@@ -1,8 +1,8 @@
-# CustomDifficulty Project for Bukkit 1.8.*
+# CustomDifficulty
 
-Note: Not yet updated fully to 1.8
+Current Status: updating to Spigot 1.12
 
-This is a republishment of the original CustomDifficulty project by Pasukaru0 (https://github.com/Pasukaru)
+This is the official fork of the original CustomDifficulty project by Pasukaru0 (https://github.com/Pasukaru), which was left unmaintained.
 
 I have been given permission by the original author to republish this project. 
 
