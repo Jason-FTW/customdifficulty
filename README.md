@@ -1,14 +1,21 @@
 # CustomDifficulty
 
-Current Status: updating to Spigot 1.12
+## Update Progress:
 
-Progress:
-- [x] Refactor
+**Core**
+
 - [x] Rewrite core methods
-- [ ] Rewrite and update the old events system
+- [ ] Update old events system
 
-This is the official fork of the original CustomDifficulty project by Pasukaru0 (https://github.com/Pasukaru), which was left unmaintained.
+**1.12+**
 
-I have been given permission by the original author to maintain, edit, and rewrite this project.
+- [ ] -Illager Mobs
+- [ ] End city and end support
 
-(http://dev.bukkit.org/bukkit-plugins/customdifficulty/#c17)
+**1.14+**
+
+- [ ] New Village support
+- [ ] Raid support
+- [ ] Item Flattening
+
+This is the official fork and recreation of the original CustomDifficulty project by Pasukaru0 (https://github.com/Pasukaru).
