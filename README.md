@@ -18,4 +18,4 @@
 - [ ] Raid support
 - [ ] Item Flattening
 
-This is the official fork and recreation of the original CustomDifficulty project by Pasukaru0 (https://github.com/Pasukaru).
+This is the official fork and recreation of the original CustomDifficulty project by [Pasukaru0](https://github.com/Pasukaru).
